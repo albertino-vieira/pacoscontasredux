@@ -52,4 +52,4 @@ export interface ReceiveDocumentTypesAction {
     payload: ReceiveDocumentTypesPayload;
 }
 
-export type ReceiveDocumentTypesActions = RequestDocumentTypesAction | FailedDocumentTypesAction | ReceiveDocumentTypesAction;
+export type DocumentTypesActions = RequestDocumentTypesAction | FailedDocumentTypesAction | ReceiveDocumentTypesAction;

@@ -5,6 +5,8 @@
 export interface RequestTypeState {
     id: number;
     type: string;
+    isFetching: boolean;
+    fetchingFailed: boolean;
 }
 
 /**
@@ -14,6 +16,8 @@ export interface RequestTypeState {
 export const initialState: RequestTypeState = {
     id: 0,
     type: "",
+    isFetching: false,
+    fetchingFailed: false,
 };
 
 /**

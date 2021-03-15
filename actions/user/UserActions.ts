@@ -55,4 +55,4 @@ export interface ReceiveUserAction {
     payload: ReceiveUserPayload;
 }
 
-export type ReceiveUserActions = RequestUserAction | FailedUserAction | ReceiveUserAction;
+export type UserActions = RequestUserAction | FailedUserAction | ReceiveUserAction;

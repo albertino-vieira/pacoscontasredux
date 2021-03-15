@@ -52,4 +52,4 @@ export interface ReceiveRequestTypesAction {
     payload: ReceiveRequestTypesPayload;
 }
 
-export type ReceiveRequestTypesActions = RequestRequestTypesAction | FailedRequestTypesAction | ReceiveRequestTypesAction;
+export type RequestTypesActions = RequestRequestTypesAction | FailedRequestTypesAction | ReceiveRequestTypesAction;

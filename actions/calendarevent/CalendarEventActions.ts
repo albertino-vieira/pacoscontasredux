@@ -52,4 +52,4 @@ export interface ReceiveCalendarEventAction {
     payload: ReceiveCalendarEventPayload;
 }
 
-export type ReceiveCalendarEventActions = RequestCalendarEventAction | FailedCalendarEventAction | ReceiveCalendarEventAction;
+export type CalendarEventActions = RequestCalendarEventAction | FailedCalendarEventAction | ReceiveCalendarEventAction;
