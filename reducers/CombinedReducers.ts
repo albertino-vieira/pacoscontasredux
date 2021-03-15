@@ -1,4 +1,5 @@
 import { combineReducers } from "redux"
+import requestStatusReducer from "./requeststatus/RequestStatusReducer";
 
 /**
  * Combines all the reducers into a single one.
@@ -6,7 +7,7 @@ import { combineReducers } from "redux"
  */
 const CombinedReducers = combineReducers(
     {
-      
+        requestStatus: requestStatusReducer
     }
 );
 export default CombinedReducers;
