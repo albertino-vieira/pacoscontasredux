@@ -1,4 +1,4 @@
-import { FAILED_REQUESTS_STATUS, ReceiveRequestsStatusPayload, RECEIVE_REQUESTS_STATUS, RequestsStatusActions, REQUEST_RESQUESTS_STATUS } from "../../actions/requestsstatus/RequestsStatusActions";
+import { FAILED_REQUESTS_STATUS, RECEIVE_REQUESTS_STATUS, RequestsStatusActions, REQUEST_RESQUESTS_STATUS } from "../../actions/requestsstatus/RequestsStatusActions";
 import { ReceiveRequestStatusPayload } from "../../actions/resqueststatus/RequestStatusActions";
 import { receiveRequestStatusActionCreator } from "../../actions/resqueststatus/RequestStatusActionsCreator";
 import { RequestsStatusState, initialState } from "../../states/requestsstatus/RequestsStatusState";

@@ -1,4 +1,3 @@
-import { ReceiveRequestPayload } from "../request/RequestActions";
 import { FailedRequestAction, FAILED_REQUEST, ReceiveRequestAction, RECEIVE_REQUEST, RequestRequestAction, REQUEST_REQUEST } from "./RequestActions";
 
 /**

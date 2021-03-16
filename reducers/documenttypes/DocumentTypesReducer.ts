@@ -1,6 +1,6 @@
 import { ReceiveDocumentTypePayload } from "../../actions/documenttype/DocumentTypeActions";
 import { receiveDocumentTypeActionCreator } from "../../actions/documenttype/DocumentTypeActionsCreators";
-import { DocumentTypesActions, FAILED_DOCUMENT_TYPES, ReceiveDocumentTypesPayload, RECEIVE_DOCUMENT_TYPES, REQUEST_DOCUMENT_TYPES } from "../../actions/documenttypes/DocumentTypesActions";
+import { DocumentTypesActions, FAILED_DOCUMENT_TYPES, RECEIVE_DOCUMENT_TYPES, REQUEST_DOCUMENT_TYPES } from "../../actions/documenttypes/DocumentTypesActions";
 import { DocumentTypeState, initialState as documentTypeInitialState } from "../../states/documenttype/DocumentTypeState";
 import { DocumentTypesState, initialState } from "../../states/documenttypes/DocumentTypesState";
 import documentTypeReducer from "../documenttype/DocumentTypeReducer";

@@ -16,8 +16,8 @@ export interface DocumentTypesState {
  * initial state.
  */
 export const initialState: DocumentTypesState = {
-    byId: new Map<number, DocumentTypeState>();
-    allIds: new Array<number>();
+    byId: new Map<number, DocumentTypeState>(),
+    allIds: new Array<number>(),
     isFetching: false,
     fetchingFailed: false
 };

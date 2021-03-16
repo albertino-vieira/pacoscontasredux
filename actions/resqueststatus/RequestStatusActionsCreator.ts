@@ -1,4 +1,4 @@
-import { FailedRequestStatus, FAILED_REQUEST_STATUS, ReceiveRequestStatus, ReceiveRequestStatusPayload, RECEIVE_REQUEST_STATUS, RequestRequestStatusAction, REQUEST_REQUEST_STATUS } from "./RequestStatusActions";
+import { FailedRequestStatus, FAILED_REQUEST_STATUS, ReceiveRequestStatus, RECEIVE_REQUEST_STATUS, RequestRequestStatusAction, REQUEST_REQUEST_STATUS } from "./RequestStatusActions";
 
 /**
  * Creates a REQUEST_REQUEST_STATUS action.

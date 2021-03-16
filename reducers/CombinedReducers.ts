@@ -1,5 +1,9 @@
 import { combineReducers } from "redux"
-import requestStatusReducer from "./requeststatus/RequestStatusReducer";
+import calendarEventsReducer from "./calendarevents/CalendarEventsReducer";
+import documentTypesReducer from "./documenttypes/DocumentTypesReducer";
+import requestsReducer from "./requests/RequestsReducer";
+import requestsStatusReducer from "./requestsstatus/RequestsStatusReducer";
+import requestTypesReducer from "./requesttypes/RequestTypesReducer";
 
 /**
  * Combines all the reducers into a single one.
@@ -7,7 +11,12 @@ import requestStatusReducer from "./requeststatus/RequestStatusReducer";
  */
 const CombinedReducers = combineReducers(
     {
-        requestStatus: requestStatusReducer
+        calendarEvents: calendarEventsReducer,
+        documentTypes: documentTypesReducer,
+        requests: requestsReducer,
+        requestsStatus: requestsStatusReducer,
+        requestTypes: requestTypesReducer
+
     }
 );
 export default CombinedReducers;
