@@ -3,6 +3,7 @@ import { DocumentTypesState, initialState as documentTypesInitialState } from ".
 import { RequestsState, initialState as requestsInitialState } from "./requests/RequestsState";
 import { RequestsStatusState, initialState as requestsStatusInitialState } from "./requestsstatus/RequestsStatusState";
 import { RequestTypesState, initialState as requestTypesInitialState } from "./requesttypes/RequestTypesState";
+import { UserState, initialState as userInitialState } from "./user/UserState";
 
 /**
  * Application state interface
@@ -14,6 +15,7 @@ export interface AppState {
     requests: RequestsState;
     requestsStatus: RequestsStatusState;
     requestTypes: RequestTypesState;
+    user: UserState;
 }
 /**
  * Application initial state.
@@ -23,6 +25,6 @@ export const initialState: AppState = {
     documentTypes: documentTypesInitialState,
     requests: requestsInitialState,
     requestsStatus: requestsStatusInitialState,
-    requestTypes: requestTypesInitialState
-
+    requestTypes: requestTypesInitialState,
+    user: userInitialState,
 };

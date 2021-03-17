@@ -4,6 +4,7 @@ import documentTypesReducer from "./documenttypes/DocumentTypesReducer";
 import requestsReducer from "./requests/RequestsReducer";
 import requestsStatusReducer from "./requestsstatus/RequestsStatusReducer";
 import requestTypesReducer from "./requesttypes/RequestTypesReducer";
+import userReducer from "./user/UserReducer";
 
 /**
  * Combines all the reducers into a single one.
@@ -15,7 +16,8 @@ const CombinedReducers = combineReducers(
         documentTypes: documentTypesReducer,
         requests: requestsReducer,
         requestsStatus: requestsStatusReducer,
-        requestTypes: requestTypesReducer
+        requestTypes: requestTypesReducer,
+        user: userReducer
 
     }
 );
