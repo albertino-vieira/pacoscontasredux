@@ -1,6 +1,7 @@
 import { combineReducers } from "redux"
 import calendarEventsReducer from "./calendarevents/CalendarEventsReducer";
 import documentTypesReducer from "./documenttypes/DocumentTypesReducer";
+import documentsReducer from "./documents/DocumentsReducer";
 import requestsReducer from "./requests/RequestsReducer";
 import requestsStatusReducer from "./requestsstatus/RequestsStatusReducer";
 import requestTypesReducer from "./requesttypes/RequestTypesReducer";
@@ -13,6 +14,7 @@ import userReducer from "./user/UserReducer";
 const CombinedReducers = combineReducers(
     {
         calendarEvents: calendarEventsReducer,
+        document: documentsReducer,
         documentTypes: documentTypesReducer,
         requests: requestsReducer,
         requestsStatus: requestsStatusReducer,
