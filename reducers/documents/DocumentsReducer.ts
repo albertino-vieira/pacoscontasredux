@@ -2,7 +2,7 @@ import { ReceiveDocumentPayload } from "../../actions/document/DocumentActions";
 import { receiveDocumentActionCreator } from "../../actions/document/DocumentActionsCreator";
 import { DocumentsActions, FAILED_DOCUMENTS, RECEIVE_DOCUMENTS, REQUEST_DOCUMENTS } from "../../actions/documents/DocumentsActions";
 import { DocumentState, initialState as documentInitialState } from "../../states/document/DocumentState";
-import { DocumentsState, initialState } from "../../states/doocuments/DocumentsState";
+import { DocumentsState, initialState } from "../../states/documents/DocumentsState";
 import documentReducer from "../document/DocumentReducer";
 
 /**

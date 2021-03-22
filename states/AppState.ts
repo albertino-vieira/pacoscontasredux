@@ -1,5 +1,5 @@
 import { CalendarEventsState, initialState as calendarEventsInitialState } from "./calendarevents/CalendarEventsState";
-import { DocumentState, initialState as documentsInitialState } from "./document/DocumentState";
+import { DocumentsState, initialState as documentsInitialState } from "./documents/DocumentsState";
 import { DocumentTypesState, initialState as documentTypesInitialState } from "./documenttypes/DocumentTypesState";
 import { RequestsState, initialState as requestsInitialState } from "./requests/RequestsState";
 import { RequestsStatusState, initialState as requestsStatusInitialState } from "./requestsstatus/RequestsStatusState";
@@ -12,7 +12,7 @@ import { UserState, initialState as userInitialState } from "./user/UserState";
  */
 export interface AppState {
     calendarEvents: CalendarEventsState;
-    documents: DocumentState;
+    documents: DocumentsState;
     documentTypes: DocumentTypesState;
     requests: RequestsState;
     requestsStatus: RequestsStatusState;
