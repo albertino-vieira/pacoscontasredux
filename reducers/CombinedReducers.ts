@@ -14,7 +14,7 @@ import userReducer from "./user/UserReducer";
 const CombinedReducers = combineReducers(
     {
         calendarEvents: calendarEventsReducer,
-        document: documentsReducer,
+        documents: documentsReducer,
         documentTypes: documentTypesReducer,
         requests: requestsReducer,
         requestsStatus: requestsStatusReducer,
