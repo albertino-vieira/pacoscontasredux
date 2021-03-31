@@ -7,7 +7,7 @@ export interface UserState {
     name: string;
     email: string;
     token: string;
-    nif: string;
+    nif: number;
     role: string;
     isFetching: boolean;
     fetchingFailed: boolean;
@@ -22,7 +22,7 @@ export const initialState: UserState = {
     name: "",
     email: "",
     token: "",
-    nif: "",
+    nif: 0,
     role: "",
     isFetching: false,
     fetchingFailed: false

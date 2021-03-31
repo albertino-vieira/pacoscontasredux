@@ -26,7 +26,7 @@ export interface ReceiveUserPayload {
     name: string;
     email: string;
     token: string;
-    nif: string;
+    nif: number;
     role: string;
 }
 

@@ -2,26 +2,32 @@ import { ReceiveDocumentTypePayload } from "../documenttype/DocumentTypeActions"
 
 /**
  * Identifier for the action of
- * requesting the calendar events
+ * requesting the document types
  * payload.
  */
 export const REQUEST_DOCUMENT_TYPES = 'REQUEST_DOCUMENT_TYPES';
 /**
  * Identifier for the action of
  * failing the request on
- * calendar events.
+ * document types.
  */
 export const FAILED_DOCUMENT_TYPES = 'FAILED_DOCUMENT_TYPES';
 /**
  * Identifier for the action of
  * receiving the request on
- * calendar events
+ * document types
  */
 export const RECEIVE_DOCUMENT_TYPES = 'RECEIVE_DOCUMENT_TYPES';
+/**
+ * Identifier for the action of
+ * creating the request on
+ * document type
+ */
+export const CREATE_DOCUMENT_TYPES = 'CREATE_DOCUMENT_TYPES';
 
 /**
  * Identifier for the payload of
- * receiving the calendar events.
+ * receiving the document types.
  */
 export interface ReceiveDocumentTypesPayload {
     documentTypes: Array<ReceiveDocumentTypePayload>;
@@ -52,4 +58,15 @@ export interface ReceiveDocumentTypesAction {
     payload: ReceiveDocumentTypesPayload;
 }
 
-export type DocumentTypesActions = RequestDocumentTypesAction | FailedDocumentTypesAction | ReceiveDocumentTypesAction;
+/** 
+ * CREATE_DOCUMENT_TYPES action interface
+ * for type definition. 
+ */
+export interface CreateDocumentTypesAction {
+    type: typeof CREATE_DOCUMENT_TYPES;
+    payload: {
+        type: string;
+    };
+}
+
+export type DocumentTypesActions = RequestDocumentTypesAction | FailedDocumentTypesAction | ReceiveDocumentTypesAction | CreateDocumentTypesAction;

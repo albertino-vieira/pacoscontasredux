@@ -27,7 +27,7 @@ export function failedUserActionCreator(): FailedUserAction {
  * 
  * @return {ReceiveCalendarsEventAction}
  */
-export function receiveUserActionCreator(idP: number, nameP: string, emailP: string, tokenP: string, nifP: string, roleP: string): ReceiveUserAction {
+export function receiveUserActionCreator(idP: number, nameP: string, emailP: string, tokenP: string, nifP: number, roleP: string): ReceiveUserAction {
     return {
         type: RECEIVE_USER,
         payload: {

@@ -1,5 +1,5 @@
 import { ReceiveDocumentTypePayload } from "../documenttype/DocumentTypeActions";
-import { FailedDocumentTypesAction, FAILED_DOCUMENT_TYPES, ReceiveDocumentTypesAction, RECEIVE_DOCUMENT_TYPES, RequestDocumentTypesAction, REQUEST_DOCUMENT_TYPES } from "./DocumentTypesActions";
+import { CreateDocumentTypesAction, CREATE_DOCUMENT_TYPES, FailedDocumentTypesAction, FAILED_DOCUMENT_TYPES, ReceiveDocumentTypesAction, RECEIVE_DOCUMENT_TYPES, RequestDocumentTypesAction, REQUEST_DOCUMENT_TYPES } from "./DocumentTypesActions";
 
 /**
  * Creates a REQUEST_DOCUMENT_TYPES action.
@@ -33,6 +33,20 @@ export function receiveDocumentTypesActionCreator(documentTypesP: Array<ReceiveD
         type: RECEIVE_DOCUMENT_TYPES,
         payload: {
             documentTypes: documentTypesP
+        }
+    };
+}
+
+/**
+ * Creates a CREATE_DOCUMENT_TYPES action.
+ * 
+ * @return {CreateDocumentTypesAction}
+ */
+export function createDocumentTypesActionCreator(typeP: string): CreateDocumentTypesAction {
+    return {
+        type: CREATE_DOCUMENT_TYPES,
+        payload: {
+            type: typeP
         }
     };
 }

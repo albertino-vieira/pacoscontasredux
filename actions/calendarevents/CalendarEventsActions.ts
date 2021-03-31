@@ -18,6 +18,12 @@ export const FAILED_CALENDAR_EVENTS = 'FAILED_CALENDAR_EVENTS';
  * calendar events
  */
 export const RECEIVE_CALENDAR_EVENTS = 'RECEIVE_CALENDAR_EVENTS';
+/**
+ * Identifier for the action of
+ * creating the request on
+ * calendar events
+ */
+export const CREATE_CALENDAR_EVENTS = 'CREATE_CALENDAR_EVENTS';
 
 /**
  * Identifier for the payload of
@@ -52,4 +58,16 @@ export interface ReceiveCalendarEventsAction {
     payload: ReceiveCalendarEventsPayload;
 }
 
-export type CalendarEventsActions = RequestCalendarEventsAction | FailedCalendarEventsAction | ReceiveCalendarEventsAction;
+/** 
+ * CREATE_CALENDAR_EVENTS action interface
+ * for type definition. 
+ */
+export interface CreateCalendarEventsAction {
+    type: typeof CREATE_CALENDAR_EVENTS;
+    payload: {
+        description: string;
+        date: Date;
+    }
+}
+
+export type CalendarEventsActions = RequestCalendarEventsAction | FailedCalendarEventsAction | ReceiveCalendarEventsAction | CreateCalendarEventsAction;

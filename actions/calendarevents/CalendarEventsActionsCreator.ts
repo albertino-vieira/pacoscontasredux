@@ -1,5 +1,5 @@
 import { ReceiveCalendarEventPayload } from "../calendarevent/CalendarEventActions";
-import { FailedCalendarEventsAction, FAILED_CALENDAR_EVENTS, ReceiveCalendarEventsAction, RECEIVE_CALENDAR_EVENTS, RequestCalendarEventsAction, REQUEST_CALENDAR_EVENTS } from "./CalendarEventsActions";
+import { CreateCalendarEventsAction, CREATE_CALENDAR_EVENTS, FailedCalendarEventsAction, FAILED_CALENDAR_EVENTS, ReceiveCalendarEventsAction, RECEIVE_CALENDAR_EVENTS, RequestCalendarEventsAction, REQUEST_CALENDAR_EVENTS } from "./CalendarEventsActions";
 
 /**
  * Creates a REQUEST_CALENDAR_EVENTS action.
@@ -33,6 +33,21 @@ export function receiveCalendarEventsActionCreator(calendarEventsP: Array<Receiv
         type: RECEIVE_CALENDAR_EVENTS,
         payload: {
             calendarEvents: calendarEventsP
+        }
+    };
+}
+
+/**
+ * Creates a RECEIVE_CALENDAR_EVENTS action.
+ * 
+ * @return {CreateCalendarEventsAction}
+ */
+export function createCalendarEventsActionCreator(dateP: Date, descriptionP: string): CreateCalendarEventsAction {
+    return {
+        type: CREATE_CALENDAR_EVENTS,
+        payload: {
+            date: dateP,
+            description: descriptionP
         }
     };
 }
