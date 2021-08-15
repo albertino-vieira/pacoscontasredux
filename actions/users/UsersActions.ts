@@ -24,10 +24,15 @@ export const RECEIVE_USERS = 'RECEIVE_USERS';
  * creating the user.
  */
 export const CREATE_USERS = 'CREATE_USERS';
+/**
+ * Identifier for the action of
+ * creating the user.
+ */
+export const LOGOUT_USERS = 'LOGOUT_USERS';
 
 /**
  * Identifier for the payload of
- * receiving the request status.
+ * receiving the user.
  */
 export interface ReceiveUsersPayload {
     users: Array<ReceiveUserPayload>;
@@ -71,4 +76,15 @@ export interface CreateUsersAction {
     };
 }
 
-export type UsersActions = RequestUsersAction | FailedUsersAction | ReceiveUsersAction;
+/** 
+ * LOGOUT_USERS action interface
+ * for type definition. 
+ */
+export interface LogoutUsersAction {
+    type: typeof LOGOUT_USERS;
+    payload: {
+        id: number
+    };
+}
+
+export type UsersActions = RequestUsersAction | FailedUsersAction | ReceiveUsersAction | CreateUsersAction | LogoutUsersAction;

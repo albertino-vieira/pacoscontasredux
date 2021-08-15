@@ -1,5 +1,5 @@
 import { ReceiveUserPayload } from "../user/UserActions";
-import { CreateUsersAction, CREATE_USERS, FailedUsersAction, FAILED_USERS, ReceiveUsersAction, RECEIVE_USERS, RequestUsersAction, REQUEST_USERS } from "./UsersActions";
+import { CreateUsersAction, CREATE_USERS, FailedUsersAction, FAILED_USERS, LogoutUsersAction, LOGOUT_USERS, ReceiveUsersAction, RECEIVE_USERS, RequestUsersAction, REQUEST_USERS } from "./UsersActions";
 
 /**
  * Creates a REQUEST_USERS action.
@@ -47,6 +47,20 @@ export function createUsersActionCreator(userP: ReceiveUserPayload): CreateUsers
         type: CREATE_USERS,
         payload: {
             user: userP
+        }
+    };
+}
+
+/**
+ * Creates a CREATE_USERS action.
+ * 
+ * @return {ReceiveCalendarsEventAction}
+ */
+export function receiveLogoutUsersActionCreator(idP: number): LogoutUsersAction {
+    return {
+        type: LOGOUT_USERS,
+        payload: {
+            id: idP
         }
     };
 }
