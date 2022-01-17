@@ -16,6 +16,7 @@ export interface CreateUserParams {
     secondContact: string;
     email: string;
     address: string;
+    password: string;
 }
 
 /** 
@@ -38,7 +39,7 @@ export interface PostLogoutParams {
 export function createUser(params: CreateUserParams): ThunkAction<Promise<UsersActions>, CreateUsersAction, CreateUserParams, UsersActions> {
     return (dispatch: ThunkDispatch<ReceiveUserPayload, CreateUserParams, UsersActions>) => {
         dispatch(requestUsersActionCreator());
-        return UsersService.create(params.name, params.nif, params.cae, params.contact, params.secondContact, params.email, params.address)
+        return UsersService.create(params.name, params.nif, params.cae, params.contact, params.secondContact, params.email, params.address, params.password)
             .then((response: any) => {
                 //response
                 return dispatch(receiveUsersActionCreator([{ id: 1, name: params.name, email: params.email, token: "", nif: 1234, role: "user", }]));
